@@ -91,7 +91,10 @@ end
   
 def play(board)
   turn(board) until over?(board)
-  
+  if won?(board)
+    puts ""
+  elsif draw?(board)
+    puts "Cat's game!"
   end
 end
   
